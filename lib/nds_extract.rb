@@ -22,8 +22,8 @@ def directors_totals(nds)
   i = 0
 
   while i < director_database.length do
-    current_director = director_database[i][name]
-    current_gross = gross_for_director(director_database[i])
+    current_director = directors_database[i][name]
+    current_gross = gross_for_director(directors_database[i])
   end
   return result
 end
