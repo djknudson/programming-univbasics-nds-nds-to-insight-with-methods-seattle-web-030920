@@ -25,5 +25,5 @@ def directors_totals(nds)
     current_director = director_database[i][name]
     current_gross = gross_for_director(director_database[i])
   end
-  puts result
+  return result
 end
