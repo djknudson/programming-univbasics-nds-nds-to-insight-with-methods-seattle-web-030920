@@ -19,5 +19,8 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-  nil
+  directors_database.each do |key|
+    result[key[:name]] = gross_for_director(key)
+  end
+  puts result
 end
