@@ -20,7 +20,7 @@ end
 def directors_totals(nds)
   result = {}
   directors_database.each do |key|
-    result[key[:name]] = gross_for_director(directors_database[key])
+    result[key[:name]] = gross_for_director(key)
   end
   puts result
 end
