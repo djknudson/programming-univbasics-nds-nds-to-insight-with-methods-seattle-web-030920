@@ -21,11 +21,11 @@ def directors_totals(nds)
   result = {}
   i = 0
 
-  while i < nds.length do
-    current_director = nds[i][:name]
-    current_gross = gross_for_director(nds[i])
+  nds.each do |director|
+    current_director = director[:name]
+    current_gross = gross_for_director(nds)
     result[current_director] = current_gross
     i += 1
   end
-  puts result
+  return result
 end
