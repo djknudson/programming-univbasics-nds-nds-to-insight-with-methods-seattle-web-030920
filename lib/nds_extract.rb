@@ -19,8 +19,10 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-  directors_database.each do |key|
-    result[key[:name]] = gross_for_director(key)
+  i = 0
+
+  while counter < director_database.length do
+    result[director_database[i][name]] = gross_for_director(director_database[i])
   end
   puts result
 end
